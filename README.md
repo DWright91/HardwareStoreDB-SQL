@@ -26,9 +26,9 @@ Step 2:
 
 In this step, you will create the tables in the ER diagram, populate the tables with the given data, and write SQL statements to display data.
 
-1. Create: Convert the ER diagram into a set of schemas. Create the corresponding tables. You should have a table for each entity set or relationship set in the diagram. 
+1). Create: Convert the ER diagram into a set of schemas. Create the corresponding tables. You should have a table for each entity set or relationship set in the diagram. 
 
-2. Insert: Insert the following information into the appropriate tables. (Data is meant to depict fictitious situations). Note that the data in the following lists may have to be put into more than one table; that is, the lists do not always correspond to a table.
+2). Insert: Insert the following information into the appropriate tables. (Data is meant to depict fictitious situations). Note that the data in the following lists may have to be put into more than one table; that is, the lists do not always correspond to a table.
 
 The following are the addresses of people (pid, streetAddress, city, state):
 
@@ -144,3 +144,64 @@ The following employees have performed the indicated service (employee-pid, cust
 
 ------------------------------------------------------------------------------------
 Part 2).
+
+Step 1:
+
+1).	Write a SQL statement to alter the Person table to add a column named lname (last name) to be of type char (30).  Make sure the last name field is next to the first name field. Write insert/update statements to insert the following data in the Person Table:
+
+    Jackson (last name for Able)
+    Laker (last name for Baker)
+    Bonjour (last name for George)
+    Laland (last name for Alice)
+    Jones (last name for Jane)
+    Smith (last name for Bill)
+
+2).	Write a SQL statement to alter the Person table to add a column named email to be of type char(100). The email field is the last one on the table. Write insert statements to insert the following data in the Person table. 
+
+    able.jackson@partsnservices.com (email for Able)
+    baker.laker@partsnservices.com (email for Baker)
+    george.bonjour@partsnservices.com (email for George)
+    alice.laland@partsnservices.com (email for Alice)
+    jane.jones@wholesalenparts.com (email for Jane)
+    billRsmith22@gmail.com (email for Bill)
+
+3).	Write a trigger to insert a person in the Person table when a new employee is inserted in the Employee table. Make sure your trigger generates a new email for the employee. The email will have the format of: fname.lname@partsnservices.com Write insert statements to add the following two new employees. 
+
+    32722 Chris Rock
+    32700 Will Smith
+
+4).	(Graduate Students Only) Write a trigger to insert a person in the Person table when a new customer is inserted in the Customer table. In your trigger, before inserting the new person, make sure the person does not already exist in the person table. You don't want to insert the same customer twice on the Person table. This is necessary here because an employee can also be a customer. No need to generate a new email for a customer; the email will be part of the insert statement. Write insert statements to add the following two new customers.
+
+    32722 Chris Rock
+    32327 Lupita Nyongo lupita.nyongo@oscar.com
+
+5).	Create a procedure to display the name and description of the service and the name and description of the hardware items each service needs. After calling the procedure, the results should show a single line of text for each service as shown in the following example.
+
+    Service: duplicate, type 1 key needs the following hardware: key, key blank - type 1
+
+6).	(Graduate Students Only) Create a procedure to display the details of a purchase made by a given customer. You will pass the pid of the customer to the procedure. The procedure will then display the name, id, address, the name of the items purchased, quantity, and the total amount for the items purchased. 
+
+    George Bonjour (PID 3289), Address: 892 StreetM, Minneapolis, MN, Purchases: <list each item purchased, quantity, and price here>
+
+7).	Write a SQL script to create a view that includes all information in the hardware store purchase table. Include in the view a column showing the total purchase for each item. 
+
+Step 2:
+
+Write and perform the following queries using SQL (Required Queries): 
+
+    1.	List the complete addresses of People who are both Customers and Employees, and include their names in your result. For example, the output would have a single column and several rows similar to the following:
+        George lives at 892 streetM Minneapolis, MN
+    2.	List the items that were delivered to an address where neither a customer lives nor a wholesale supplier is located at. Show in your result the Item iid and description as well at the complete address.
+    3.	How many people have bought one or more hardware items and no services? Include the name of those people and the items they bought in your results.
+    4.	List the customers who made the least expensive hardware purchase in a single transaction; consider the price paid, not the per-unit price. Include the customer name, pid, hardware iid, and price.
+    5.	List the pids and names of the people who bought a service that they did not perform for themselves.
+    6.	For the services that use hardware, list the service iid, name, and description; also list the iid, name, and description of the hardware used.
+    7.	For each employee indicate whether they have performed a service or delivered an item. Each row in the resulting table should have four columns: Employee pid, name, service, and delivery. If they have delivered an item, then indicated         "yes" for the delivery attribute; if they have performed a service, then indicate "yes" for the service attribute; otherwise, the attribute value is to be "no". Employees must be listed only once. In addition, each employee is to be         listed even if they performed no service or delivery. The output must be sorted by pid.
+    8. For each hardware item, compute the total quantity that has been sold to customers, and the total quantity that has been bought from Wholesale suppliers. Hardware items must be listed even if they have a zero total quantity for the            number bought or sold. List the hardware item iid and the two total quantity values. Output must be sorted by iid. One single table is to be produced. 
+
+Important Notes:	
+
+    1.	The display of duplicate tuples must be eliminated.
+    2.	Your queries must be capable of producing correct results for ANY instance of the tables.
+    3.	Include a justification of the results of your queries
+
