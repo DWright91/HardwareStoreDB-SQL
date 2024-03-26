@@ -190,14 +190,14 @@ Step 2:
 Write and perform the following queries using SQL (Required Queries): 
 
     1.	List the complete addresses of People who are both Customers and Employees, and include their names in your result. For example, the output would have a single column and several rows similar to the following:
-        George lives at 892 streetM Minneapolis, MN
+            George lives at 892 streetM Minneapolis, MN
     2.	List the items that were delivered to an address where neither a customer lives nor a wholesale supplier is located at. Show in your result the Item iid and description as well at the complete address.
     3.	How many people have bought one or more hardware items and no services? Include the name of those people and the items they bought in your results.
     4.	List the customers who made the least expensive hardware purchase in a single transaction; consider the price paid, not the per-unit price. Include the customer name, pid, hardware iid, and price.
     5.	List the pids and names of the people who bought a service that they did not perform for themselves.
     6.	For the services that use hardware, list the service iid, name, and description; also list the iid, name, and description of the hardware used.
     7.	For each employee indicate whether they have performed a service or delivered an item. Each row in the resulting table should have four columns: Employee pid, name, service, and delivery. If they have delivered an item, then indicated         "yes" for the delivery attribute; if they have performed a service, then indicate "yes" for the service attribute; otherwise, the attribute value is to be "no". Employees must be listed only once. In addition, each employee is to be         listed even if they performed no service or delivery. The output must be sorted by pid.
-    8. For each hardware item, compute the total quantity that has been sold to customers, and the total quantity that has been bought from Wholesale suppliers. Hardware items must be listed even if they have a zero total quantity for the            number bought or sold. List the hardware item iid and the two total quantity values. Output must be sorted by iid. One single table is to be produced. 
+    8.     For each hardware item, compute the total quantity that has been sold to customers, and the total quantity that has been bought from Wholesale suppliers. Hardware items must be listed even if they have a zero total quantity for the            number bought or sold. List the hardware item iid and the two total quantity values. Output must be sorted by iid. One single table is to be produced. 
 
 Important Notes:	
 
