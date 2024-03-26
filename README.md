@@ -4,9 +4,7 @@ Part 1).
 
 Step 1:
 
-  Draw an ER diagram that depicts the following situation. You must show all relevant entity sets, relationship sets, attributes, and key constraints/participation.
-
-  ![image](https://github.com/DWright91/HardwareStoreDB-SQL/assets/94549091/20ca2052-07e7-4f58-b284-0f30cf8dbda4)
+Draw an ER diagram that depicts the following situation. You must show all relevant entity sets, relationship sets, attributes, and key constraints/participation.
 
     1.	A person has a name and a unique personal id. People may live at one or more addresses. Each address may be associated with one or more people.
     2.	An address consists of a street address, a city, and a state. The combination of these attributes is unique for a given address.
@@ -19,7 +17,13 @@ Step 1:
     9.	A supplier has a unique supplier id and a name. All suppliers are located at one or more Addresses.
     10.	Purchased items may be delivered by an employee to the address specified by the Customer. The delivery date is recorded.
 
+![image](https://github.com/DWright91/HardwareStoreDB-SQL/assets/94549091/20ca2052-07e7-4f58-b284-0f30cf8dbda4)
+
+
+
 Step 2:
+
+
 In this step, you will create the tables in the ER diagram, populate the tables with the given data, and write SQL statements to display data.
 
 1. Create: Convert the ER diagram into a set of schemas. Create the corresponding tables. You should have a table for each entity set or relationship set in the diagram. 
