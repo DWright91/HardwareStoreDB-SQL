@@ -1,7 +1,9 @@
 # Hardware Store DB - SQL
 
 Part 1).
+
 Step 1:
+
   Draw an ER diagram that depicts the following situation. You must show all relevant entity sets, relationship sets, attributes, and key constraints/participation.
 
   ![image](https://github.com/DWright91/HardwareStoreDB-SQL/assets/94549091/20ca2052-07e7-4f58-b284-0f30cf8dbda4)
