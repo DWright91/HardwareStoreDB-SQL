@@ -1,4 +1,4 @@
-# Hardware Store DB - SQL
+# Hardware Store DB - Oracle SQL Developer
 
 Part1.sql:
 
