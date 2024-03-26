@@ -1,8 +1,8 @@
 # Hardware Store DB - SQL
 
-Part 1).
+Part1.sql:
 
-Step 1:
+Step 1):
 
 Draw an ER diagram that depicts the following situation. You must show all relevant entity sets, relationship sets, attributes, and key constraints/participation.
 
@@ -21,7 +21,7 @@ Draw an ER diagram that depicts the following situation. You must show all relev
 
 
 
-Step 2:
+Step 2):
 
 
 In this step, you will create the tables in the ER diagram, populate the tables with the given data, and write SQL statements to display data.
@@ -143,9 +143,9 @@ The following employees have performed the indicated service (employee-pid, cust
     10234, 10234, 100, 09/12/21, 0.1
 
 ------------------------------------------------------------------------------------
-Part 2).
+Part2.sql
 
-Step 1:
+Step 1):
 
 1).	Write a SQL statement to alter the Person table to add a column named lname (last name) to be of type char (30).  Make sure the last name field is next to the first name field. Write insert/update statements to insert the following data in the Person Table:
 
@@ -185,7 +185,7 @@ Step 1:
 
 7).	Write a SQL script to create a view that includes all information in the hardware store purchase table. Include in the view a column showing the total purchase for each item. 
 
-Step 2:
+Step 2):
 
 Write and perform the following queries using SQL (Required Queries): 
 
